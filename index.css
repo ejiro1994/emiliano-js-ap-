@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+* {
+    outline: none;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, #c4c5c7 0%, #dcdddf 52%, #ebebeb 100%) no-repeat fixed center;
+    background: ;
+}
+
+ul {
+    list-style: none;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board input {
+    border: none;
+    background: #ebebeb;
+    outline: none;
+    margin-right: 1px;
+    padding: 1rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.board button {
+    border: none;
+    padding: 1rem;
+    padding-right:20px ;
+    color: grey;
+    background: #ebebeb;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: .5rem;
+    background: #ebebeb;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.box {
+    border-radius: 30px;
+    display:flex;
+    margin: 2% 2%;
+    justify-content: space-around;
+    background: grey;
+    background: rgb(98,0,240);
+background: linear-gradient(141deg, rgba(98,0,240,1) 0%, rgba(255,123,64,1) 100%);
+    height: 5rem;
+    align-items: center;
+    color: white;
+    text-transform: capitalize
+}
+
+
+.button {
+    all: unset;
+    background:white;
+    padding: .4rem 2rem;
+    border-radius: 30px;
+    color: black;
+
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+
+.list {
+display: flex;
+justify-content: space-around
+}
+
+input {
+all: unset;
+border-bottom: solid 1px;
+
+
+}
+
+
+::placeholder {
+    color: white;
+}
+
+.board-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.scoreCard {
+    margin-bottom: 30px;
+}
+
+.button {
+    background: linear-gradient(to right, #F09819 0%, #EDDE5D 51%, #F09819 100%);
+    color: rgba(0,0,0,.6);
+    font-weight: 500;
+    border: rgba(0,0,0,.1) 3px solid ;
+
+
+    
+}
+
+.button:hover { 
+    background-position: right center; 
+}
