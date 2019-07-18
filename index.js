@@ -261,39 +261,56 @@
 
 
 let btn = document.querySelector('.button')
-let name = document.getElementById('name')
-let age = document.getElementById('age')
-let score =  document.getElementById('score')
 
+let ageInput = document.getElementById('age') //l
+let scoreInput =  document.getElementById('score') //L
+
+
+let inputName = document.getElementById('name')
 const list = document.querySelector('.board-list')
 
+
+let showScore = ()=> {
+    
+    let age = ageInput.value
+    let score = scoreInput.value
+
+    let newListItem = document.createElement('li')
+    newListItem.innerHTML = `${age} ${score} `
+    list.appendChild(newListItem)
+}
+
 btn.addEventListener('click', () => {
-    showScore()
+ showScore()
 })
 
-let showScore = () => {
 
 
-    if (score.value > 0) {
-        switch (true) {
-            case score.value >= 35: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got a GOLD `); break;
-            case score.value >= 30: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got a SILVER `); break;
-            case score.value >= 25: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got a BRONZE `); break;
-            default: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got NOTHING `); break;
-        }
 
 
-        const scoreCard = document.createElement('li');
-        scoreCard.className = 'scoreCard';
-        scoreCard.id = `scoreCard`;
-        scoreCard.innerHTML = `${name.value} is ${age.value} years old with a final score of ${score.value} points.`;
+// let showScore = () => {
+
+
+//     if (score.value > 0) {
+//         switch (true) {
+//             case score.value >= 35: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got a GOLD `); break;
+//             case score.value >= 30: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got a SILVER `); break;
+//             case score.value >= 25: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got a BRONZE `); break;
+//             default: console.log(`${name.value} is ${age.value} years of age. He scored ${score.value} and he got NOTHING `); break;
+//         }
+
+
+//         const scoreCard = document.createElement('li');
+//         scoreCard.className = 'scoreCard';
+//         scoreCard.id = `scoreCard`;
+//         scoreCard.innerHTML = `${name.value} is ${age.value} years old with a final score of ${score.value} points.`;
         
-        list.appendChild(scoreCard);
+//         list.appendChild(scoreCard);
 
 
-    } else {
-        alert('your score is invalid')
-    }
+//     } else {
+//         alert('your score is invalid')
+//     }
 
-}
+// }
 

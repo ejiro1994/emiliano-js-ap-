@@ -63,7 +63,8 @@ background: linear-gradient(141deg, rgba(98,0,240,1) 0%, rgba(255,123,64,1) 100%
     height: 5rem;
     align-items: center;
     color: white;
-    text-transform: capitalize
+    text-transform: capitalize;
+    box-shadow: 2px 7px 15px #B480FF;
 }
 
 
